@@ -21,6 +21,7 @@ print('Откуда подслушывать:')
 chat_from = int(input())
 print('Куда пересылать:')
 chat_to = int(input())
+print('Слуша...')
 
 @client.on(events.NewMessage(chats=(all_dialogs[chat_from])))
 async def normal_handler(event):
